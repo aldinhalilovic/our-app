@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import { toast } from "react-hot-toast";
 
 function HomePage() {
   return (
@@ -11,7 +12,7 @@ function HomePage() {
           "https://www.n-sport.net/UserFiles/products/big/09/12/muska-majica-replay-316522832P-098.jpg"
         }
         title={"Replay Maica"}
-        // onClick={() => toast.success("Uspesno ste dodali artikal u korpu!")}
+        onClick={() => toast.success("Uspesno ste dodali artikal u korpu!")}
       />
     </div>
   );
