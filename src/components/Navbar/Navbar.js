@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="text-white">
-      <div className="flex justify-between pr-10 gap-4 p-5 bg-blue-900">
+    <div className="text-black">
+      <div className="flex justify-between pr-10 gap-4 p-5 bg-white">
         <NavLink to={"/"}>
           <h1 className="font-bold text-4xl">Online Shop</h1>
         </NavLink>

@@ -33,5 +33,12 @@
       "price": 1100,
       "imgUrl": "https://istyle.rs/pub/media/catalog/product/cache/image/400x400/beff4985b56e3afdbeabfc89641a4582/c/z/czcs_watchultra_cellular_q422_49mm_titanium_yellow_ocean_band_pdp_image_position-1_t_2_1.jpg",
       "currency": "EUR"
+    },
+    {
+      "id": 6,
+      "name": "Apple AirPods",
+      "price": 250,
+      "imgUrl": "https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/m/mme73_av2_24.jpg",
+      "currency": "EUR"
     }
   ]
