@@ -13,7 +13,7 @@ function ProductCard({ image, title, price, onClick }) {
           >
             Add to cart
           </button>
-          <p className="px-4 py-2 text-black-300 rounded mt-3">$ {price}</p>
+          <p className="px-4 py-2 text-black-300 rounded mt-3">€{price}</p>
         </div>
       </div>
     </div>
