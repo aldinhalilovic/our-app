@@ -7,6 +7,8 @@ function CartPage() {
     useContext(ShoppingCartContext);
 
   console.log(cartItems);
+  const itemsPrice = cartItems.reduce((a, c) => a + c.quantity * c.price, 0);
+
   return (
     <div className="w-full h-[90%] bg-iphone-shop bg-cover bg-center">
       {cartItems.length === 0 ? (
@@ -24,7 +26,7 @@ function CartPage() {
         </div>
       ) : (
         <div className="w-screen flex justify-center items-center ">
-          <div className="flex flex-col items-center w-5/6">
+          <div className="flex flex-col items-center w-5/6 ">
             {cartItems.map((product) => (
               <div
                 key={product.id}
@@ -66,12 +68,15 @@ function CartPage() {
               </div>
             ))}
           </div>
-          <div className="w-1/6 h-52  mt-36 mr-36  border-2 pt-12">
+          <div className="w-1/6 h-52  mt-24 mr-36 pt-12">
+            <h1>Total for paymant is :</h1>
+            <br />
+            <br />
             {cartItems.map((product) => (
-              <div>{product.price * product.quantity} </div>
+              <div>+{product.price * product.quantity} </div>
             ))}
-            <hr />
-            <hr />
+            <br />
+            {itemsPrice}
           </div>
         </div>
       )}
