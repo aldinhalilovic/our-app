@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
-// import { toast } from "react-hot-toast";
 import products from "../../common/items.json";
 import { ShoppingCartContext } from "../../context/ShoppingCartContext";
 import Footer from "../../components/Footer/Footer";
@@ -9,7 +8,7 @@ function HomePage() {
   const { addToCart } = useContext(ShoppingCartContext);
   return (
     <div className="min-w-full max-w-full h-[90%] bg-stone-300">
-      <div className="bg-iphone-banner bg-no-repeat bg-cover h-full text-white  font-bold font-sans text-4xl  flex justify-center  items-center flex-col ">
+      <div className="bg-iphone-banner bg-no-repeat bg-cover h-full text-white font-bold font-sans text-4xl flex flex-col justify-center items-center ">
         <h1> WELCOME TO ONLINE SHOP</h1>
         <button
           className="mt-10 bg-transparent text-white rounded-full px-8 py-3"

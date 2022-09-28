@@ -8,7 +8,7 @@ function CartPage() {
 
   console.log(cartItems);
   return (
-    <div className="w-full bg-iphone-shop h-[90%] bg-cover bg-center">
+    <div className="w-full h-[90%] bg-iphone-shop bg-cover bg-center">
       {cartItems.length === 0 ? (
         <div className="m-auto pt-10  w-4/12 flex flex-col items-center gap-8 ">
           <h1 className="text-3xl text-white font-semibold  p-1 rounded-lg">
@@ -18,13 +18,13 @@ function CartPage() {
             You still have nothing in your cart. Check out our large selection
             product and start shopping.
           </p>
-          <button className="text-xl text-white text-center p-2 rounded-xl mt-60 bg-cyan-900 ml-2 opacity-75 hover:opacity-100">
+          <button className="text-xl text-white text-center p-2  mt-60 ml-2 bg-cyan-900 rounded-xl opacity-75 hover:opacity-100">
             <Link to="/">START SHOPPING</Link>
           </button>
         </div>
       ) : (
         <div className="w-screen flex justify-center items-center ">
-          <div className="flex flex-col  items-center  w-5/6">
+          <div className="flex flex-col items-center w-5/6">
             {cartItems.map((product) => (
               <div
                 key={product.id}
