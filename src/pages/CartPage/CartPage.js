@@ -23,47 +23,56 @@ function CartPage() {
           </button>
         </div>
       ) : (
-        <div className="flex flex-col justify-center items-center pt-28 w-full">
-          {cartItems.map((product) => (
-            <div
-              key={product.id}
-              className="flex mx-3 my-4 border-2 border-slate-700 rounded justify-start h-1/2 w-4/6 items-center"
-            >
-              <img src={product.imgUrl} alt={product.name} width={70} />
-              <div className="flex-col ml-8 justify-center w-1/6">
-                <h2 className="font-bold">{product.name}</h2>
-              </div>
-              <div className="mx-10 flex justify-center my-3 items-center">
-                <p className="text-bold">Amout:</p>
-                <button
-                  onClick={() => decreaseQuantity(product.id)}
-                  className="rounded border-2 border-slate-700 h-auto px-1 text-center mx-3 w-7"
-                >
-                  -
-                </button>
-                <p>{product.quantity}</p>
-                <button
-                  onClick={() => increaseQuantity(product.id)}
-                  className="rounded border-2 border-slate-700 h-auto px-1 text-center mx-3"
-                >
-                  +
-                </button>
-              </div>
-              <div className="mx-10 flex justify-center my-3 items-center">
-                <p className="text-bold">One piece: {product.price} </p>
-              </div>
-              <div className="mx-10 flex justify-center my-3 items-center">
-                Total Amout: {product.price * product.quantity}{" "}
-                {product.currency}
-              </div>
-              <button
-                onClick={() => removeFromCart(product.id)}
-                className="ml-40 rounded border-white border-2 w-10 h-10 text-center"
+        <div className="w-screen flex justify-center items-center ">
+          <div className="flex flex-col  items-center  w-5/6">
+            {cartItems.map((product) => (
+              <div
+                key={product.id}
+                className="flex items-center justify-between mx-3 my-4 border-2 h-1/2 w-4/6 rounded bg-purple-600 opacity-90 border-slate-700 text-black"
               >
-                X
-              </button>
-            </div>
-          ))}
+                <img src={product.imgUrl} alt={product.name} width={70} />
+                <div className="w-1/5">
+                  <h2 className="font-bold">{product.name}</h2>
+                </div>
+                <div className="flex justify-between items-center w-40">
+                  <p className="text-bold">Amount:</p>
+                  <button
+                    onClick={() => decreaseQuantity(product.id)}
+                    className="rounded border-2 border-black h-auto text-center w-7"
+                  >
+                    -
+                  </button>
+                  <p className="font-bold">{product.quantity}</p>
+                  <button
+                    onClick={() => increaseQuantity(product.id)}
+                    className="rounded border-2 border-black h-auto text-center w-7"
+                  >
+                    +
+                  </button>
+                </div>
+                <div className="flex justify-center items-center w-20">
+                  <p className="text-bold">One piece: {product.price} </p>
+                </div>
+                <div className="flex justify-center items-center w-32">
+                  Total Amount: {product.price * product.quantity}{" "}
+                  {product.currency}
+                </div>
+                <button
+                  onClick={() => removeFromCart(product.id)}
+                  className="rounded bg-zinc-700 border-white text-white border-2 w-10 h-10 text-center mr-10"
+                >
+                  X
+                </button>
+              </div>
+            ))}
+          </div>
+          <div className="w-1/6 h-52  mt-36 mr-36  border-2 pt-12">
+            {cartItems.map((product) => (
+              <div>{product.price * product.quantity} </div>
+            ))}
+            <hr />
+            <hr />
+          </div>
         </div>
       )}
     </div>
