@@ -44,7 +44,7 @@ const ShoppingCartContextProvider = ({ children }) => {
 
   const decreaseQuantity = (id) => {
     setCartItems((prevItems) => {
-      if (prevItems.find((el) => el.quantity === 1)) {
+      if (prevItems.find((el) => el.id === id).quantity === 1) {
         removeFromCart(id);
       }
       return prevItems.map((item) => {
@@ -75,3 +75,16 @@ const ShoppingCartContextProvider = ({ children }) => {
 };
 
 export { ShoppingCartContext, ShoppingCartContextProvider };
+
+// crypto aplikacija, ime po izboru
+// boje koje hocemo, perfekcija da izgleda
+// navigaicja sticky,
+// prva strana, lista svih coina po karticama, trebaju detalji na svaki coin,
+
+// drugi tab exchanges,
+
+// peta about stranica
+// team member kartica na about, stavlja se samo github
+
+// favourite coins za coins
+// axios instance
