@@ -7,6 +7,9 @@ function CartPage() {
     useContext(ShoppingCartContext);
 
   console.log(cartItems);
+  console.log(cartItems);
+  console.log(cartItems);
+
   const itemsPrice = cartItems.reduce((a, c) => a + c.quantity * c.price, 0);
 
   return (
