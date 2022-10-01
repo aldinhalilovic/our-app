@@ -71,7 +71,7 @@ function CartPage() {
               </div>
             ))}
           </div>
-          <div className="w-1/6 h-52  mt-24 mr-36 pt-12 bg-white flex flex-col justify-center items-center opacity-60 font-bold">
+          <div className="w-1/6 min-h-52  mt-24 pb-10 mr-36 pt-12 bg-white flex flex-col justify-center items-center opacity-60 font-bold">
             <h1>Total for paymant is :</h1>
             <br />
             <br />
