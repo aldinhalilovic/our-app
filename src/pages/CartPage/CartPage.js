@@ -75,6 +75,7 @@ function CartPage() {
             <h1>Total for paymant is :</h1>
             <br />
             <br />
+            <br />
             {cartItems.map((product) => (
               <div>+{product.price * product.quantity} </div>
             ))}
