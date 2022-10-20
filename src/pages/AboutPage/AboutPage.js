@@ -37,7 +37,6 @@ function AboutPage() {
           target="_blank"
           rel="noreferrer"
         >
-          {/* <img src={GithubIcon} alt="" /> */}
           View on Github
         </a>
       </div>

@@ -1,7 +1,6 @@
 import React, { createContext, useState } from "react";
 import { toast } from "react-hot-toast";
 
-// create context
 const ShoppingCartContext = createContext();
 
 const ShoppingCartContextProvider = ({ children }) => {
@@ -67,7 +66,6 @@ const ShoppingCartContextProvider = ({ children }) => {
   };
 
   return (
-    // the Provider gives access to the context to its children
     <ShoppingCartContext.Provider value={values}>
       {children}
     </ShoppingCartContext.Provider>
@@ -75,16 +73,3 @@ const ShoppingCartContextProvider = ({ children }) => {
 };
 
 export { ShoppingCartContext, ShoppingCartContextProvider };
-
-// crypto aplikacija, ime po izboru
-// boje koje hocemo, perfekcija da izgleda
-// navigaicja sticky,
-// prva strana, lista svih coina po karticama, trebaju detalji na svaki coin,
-
-// drugi tab exchanges,
-
-// peta about stranica
-// team member kartica na about, stavlja se samo github
-
-// favourite coins za coins
-// axios instance

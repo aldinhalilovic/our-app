@@ -21,7 +21,6 @@ function HomePage() {
               })
             }
           >
-            {" "}
             Go to products
           </button>
         </div>
