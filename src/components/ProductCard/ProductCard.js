@@ -2,7 +2,7 @@ import React from "react";
 
 function ProductCard({ image, title, price, onClick }) {
   return (
-    <div className="bg-indigo-200 w-1/3 flex my-10 justify-center items-center ">
+    <div className="bg-indigo-200 w-1/3 flex my-10 justify-center items-center z-8">
       <div className="w-60 h-full  px-6 bg-white  rounded py-6 transform transition-all  hover:bg-stone-50">
         <img className="h-50 object-cover " src={image} alt="Product" />
         <h2 className="font-bold text-lg ml-10 pt-5"> {title} </h2>

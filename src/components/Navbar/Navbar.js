@@ -6,7 +6,7 @@ function Navbar() {
   const { cartItems } = useContext(ShoppingCartContext);
 
   return (
-    <div className="text-black h-[10%] sticky top-0 ">
+    <div className="text-black h-[10%] sticky top-0 z-10">
       <div className="flex justify-between pr-10 gap-4 p-5 bg-white">
         <NavLink to={"/"}>
           <h1 className="font-bold text-4xl">iShop</h1>
